@@ -12,6 +12,8 @@
         <module>eureka-server</module>
         <module>provider-service</module>
         <module>ribbon-load-balancer</module>
+        <module>feign-client</module>
+        <module>mail-sender</module>
     </modules>
 
     <parent>
@@ -33,10 +35,10 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
+<!--        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka-server</artifactId>
-        </dependency>
+        </dependency>-->
 
 
     </dependencies>
