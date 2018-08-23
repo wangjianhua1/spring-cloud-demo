@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.RequestParam;
  * 使用@FeignClient("compute-service")注解来绑定该接口对应compute-service服务.
  * 通过Feign以接口和注解配置的方式，轻松实现了对compute-service服务的绑定，这样我们就可以在本地应用中像本地服务一下的调用它，并且做到了
  * <p>客户端均衡负载</p>
+ * Hystrix断路由
  */
-@FeignClient("compute-service")
+//@FeignClient("compute-service")
+@FeignClient(value = "compute-service", fallback = ComputeClientHystrix.class)
 public interface ComputeClient {
 
     @RequestMapping(method = RequestMethod.GET, value = "/add")
