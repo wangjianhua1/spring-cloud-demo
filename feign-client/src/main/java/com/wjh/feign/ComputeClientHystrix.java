@@ -3,6 +3,9 @@ package com.wjh.feign;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestParam;
 
+/**
+ * 断路由器
+ */
 @Component
 public class ComputeClientHystrix implements ComputeClient {
 

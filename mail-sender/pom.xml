@@ -19,8 +19,14 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <!--springboot1.5以上不支持了-->
+        <!--<dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-velocity</artifactId>
-        </dependency><!--在resources/templates/下，创建一个模板页面template.vm velocity模板-->
+        </dependency>--><!--在resources/templates/下，创建一个模板页面template.vm velocity模板-->
     </dependencies>
 
 </project>

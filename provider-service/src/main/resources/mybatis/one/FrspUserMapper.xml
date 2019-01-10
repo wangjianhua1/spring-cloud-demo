@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.espay.mapper.one.FrspUserOneMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.espay.pojo.entity.FrspUser">
+        <result column="ID" property="id" />
+        <result column="USERNAME" property="username" />
+        <result column="PASSWORD" property="password" />
+        <result column="ACCOUNT" property="account" />
+        <result column="SEX" property="sex" />
+        <result column="MOBILE" property="mobile" />
+        <result column="EMAIL" property="email" />
+
+    </resultMap>
+
+    <select id="findUserByNameAndPassword" resultMap="BaseResultMap">
+        SELECT ID,USERNAME,PASSWORD,ACCOUNT FROM FRSP_USER WHERE ACCOUNT = #{account} and PASSWORD=#{password}
+    </select>
+    <select id="checkAccount" resultType="int" parameterType="string">
+        SELECT count(*) from frsp_user WHERE ACCOUNT = #{account};
+    </select>
+
+    <insert id="addUser" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+        insert into frsp_user(account,password,username,sex,mobile,email) values(#{account},#{password},#{username},#{sex},#{mobile},#{email})
+        <selectKey resultType="int" keyProperty="id" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+
+</mapper>

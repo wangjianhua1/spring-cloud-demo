@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.espay.mapper.two.SensitiveWordMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.espay.pojo.entity.SensitiveWord">
+        <result column="id" property="id" />
+        <result column="typeName" property="typeName" />
+        <result column="word" property="word" />
+        <result column="createTime" property="createTime" />
+    </resultMap>
+
+
+</mapper>

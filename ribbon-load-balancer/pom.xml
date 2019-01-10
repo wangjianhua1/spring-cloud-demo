@@ -12,23 +12,28 @@
     <artifactId>ribbon-load-balancer</artifactId>
 
     <dependencies>
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-ribbon</artifactId>
-        </dependency>
-        <dependency>
+        </dependency>-->
+        <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-eureka</artifactId>
-        </dependency>
+        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <!--<artifactId>spring-cloud-starter-eureka</artifactId>-->
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency><!--依赖于erueka-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix</artifactId>
-        </dependency><!--Netflix Hystrix断路由-->
+        </dependency>&lt;!&ndash;Netflix Hystrix断路由&ndash;&gt;-->
     </dependencies>
 
 </project>

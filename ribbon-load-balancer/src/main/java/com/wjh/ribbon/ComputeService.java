@@ -1,6 +1,5 @@
 package com.wjh.ribbon;
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -21,8 +20,9 @@ public class ComputeService {
      *
      * @return
      */
-    @HystrixCommand(fallbackMethod = "addServiceFallback")
+//    @HystrixCommand(fallbackMethod = "addServiceFallback")
     public String addService() {
+//        restTemplate.postForObject()
         return restTemplate.getForEntity("http://COMPUTE-SERVICE/add?a=10&b=20", String.class).getBody();
     }
 

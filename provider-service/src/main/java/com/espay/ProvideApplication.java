@@ -1,7 +1,7 @@
-package com.wjh.provider;
+package com.espay;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 /*该注解能激活Eureka中的DiscoveryClient实现，才能实现Controller中对服务信息的输出。*/
 
@@ -14,6 +14,6 @@ public class ProvideApplication {
      * @param args
      */
     public static void main(String[] args) {
-        new SpringApplicationBuilder(ProvideApplication.class).web(true).run(args);
+       SpringApplication.run(ProvideApplication.class, args);
     }
 }
