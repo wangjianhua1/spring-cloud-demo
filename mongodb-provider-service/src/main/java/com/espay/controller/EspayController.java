@@ -26,9 +26,9 @@ public class EspayController {
     }
 
     @GetMapping("executeModel")
-    public JSONObject executeModel(String typeName, String ops) {
+    public String executeModel(String typeName, String ops) {
         word2Vec.executeModel(typeName, ops);
-        return JSONObject.parseObject("执行成功");
+        return "执行成功";
     }
 
 
