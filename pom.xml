@@ -15,6 +15,9 @@
         <module>feign-client</module>
         <module>mail-sender</module>
         <module>mongodb-provider-service</module>
+        <module>webflux</module>
+        <module>zuul</module>
+        <module>kafka-demo</module>
     </modules>
 
     <parent>

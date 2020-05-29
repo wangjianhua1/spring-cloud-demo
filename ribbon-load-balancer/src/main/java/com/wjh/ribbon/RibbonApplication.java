@@ -17,9 +17,9 @@ import org.springframework.web.client.RestTemplate;
 @EnableCircuitBreaker
 public class RibbonApplication {
     /**
+     * @return
      * @EnableDiscoveryClient 注解来添加发现服务能力
      * @LoadBalanced 注解开启均衡负载能力
-     * @return
      */
     @Bean
     @LoadBalanced

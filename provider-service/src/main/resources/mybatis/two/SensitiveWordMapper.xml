@@ -3,10 +3,10 @@
 <mapper namespace="com.espay.mapper.two.SensitiveWordMapper">
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.espay.pojo.entity.SensitiveWord">
-        <result column="id" property="id" />
-        <result column="typeName" property="typeName" />
-        <result column="word" property="word" />
-        <result column="createTime" property="createTime" />
+        <result column="id" property="id"/>
+        <result column="typeName" property="typeName"/>
+        <result column="word" property="word"/>
+        <result column="createTime" property="createTime"/>
     </resultMap>
 
 

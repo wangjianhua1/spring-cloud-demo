@@ -9,7 +9,7 @@ import java.io.Serializable;
 public class BotMessageVO implements Serializable {
     private String info;
     private String username;
-    private  String userId;
+    private String userId;
     private String name;
     private String phone;
     private String email;

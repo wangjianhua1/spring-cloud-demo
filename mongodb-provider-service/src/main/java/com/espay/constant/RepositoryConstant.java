@@ -67,11 +67,11 @@ public class RepositoryConstant {
         int ALL_COPY_NUM = 5000;//所有的
         int TENCENT_COPY_NUM = 5000;//所有的
 
-        String WEIBO="WEIBO";
-        String ZHIHU="ZHIHU";
-        String FINANCE="FINANCE";
-        String ALL="ALL";
-        String TENCENT="TENCENT";
+        String WEIBO = "WEIBO";
+        String ZHIHU = "ZHIHU";
+        String FINANCE = "FINANCE";
+        String ALL = "ALL";
+        String TENCENT = "TENCENT";
     }
 
 }

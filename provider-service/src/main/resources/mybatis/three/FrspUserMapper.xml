@@ -3,13 +3,13 @@
 <mapper namespace="com.espay.mapper.three.FrspUserTreeMapper">
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.espay.pojo.entity.FrspUser">
-        <result column="ID" property="id" />
-        <result column="USERNAME" property="username" />
-        <result column="PASSWORD" property="password" />
-        <result column="ACCOUNT" property="account" />
-        <result column="SEX" property="sex" />
-        <result column="MOBILE" property="mobile" />
-        <result column="EMAIL" property="email" />
+        <result column="ID" property="id"/>
+        <result column="USERNAME" property="username"/>
+        <result column="PASSWORD" property="password"/>
+        <result column="ACCOUNT" property="account"/>
+        <result column="SEX" property="sex"/>
+        <result column="MOBILE" property="mobile"/>
+        <result column="EMAIL" property="email"/>
 
     </resultMap>
 
@@ -21,7 +21,8 @@
     </select>
 
     <insert id="addUser" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
-        insert into frsp_user(account,password,username,sex,mobile,email) values(#{account},#{password},#{username},#{sex},#{mobile},#{email})
+        insert into frsp_user(account,password,username,sex,mobile,email)
+        values(#{account},#{password},#{username},#{sex},#{mobile},#{email})
         <selectKey resultType="int" keyProperty="id" order="AFTER">
             SELECT LAST_INSERT_ID()
         </selectKey>

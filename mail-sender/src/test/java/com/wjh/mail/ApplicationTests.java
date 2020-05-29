@@ -24,9 +24,9 @@ public class ApplicationTests {
     @Autowired
     private TemplateEngine templateEngine;
 
-    private String from="1270063771@qq.com";
-    private String to="jianghang1@jd.com";
-    private String to2="zhangjie35@jd.com";
+    private String from = "1270063771@qq.com";
+    private String to = "jianghang1@jd.com";
+    private String to2 = "zhangjie35@jd.com";
 
     @Test
     public void sendSimpleMail() throws Exception {
@@ -41,6 +41,7 @@ public class ApplicationTests {
 
     /**
      * 需要注意的是addInline函数中资源名称weixin需要与正文中cid:weixin对应起来
+     *
      * @throws Exception
      */
     @Test

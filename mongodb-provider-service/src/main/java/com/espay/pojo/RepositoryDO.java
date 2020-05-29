@@ -47,7 +47,7 @@ public class RepositoryDO {
     private String updateUserName;
     @Field(value = "audit_user_name")
     private String auditUserName;
-    @Field (value = "hot_hit")
+    @Field(value = "hot_hit")
     private Integer hotHit;
 
 }

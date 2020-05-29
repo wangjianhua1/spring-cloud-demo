@@ -14,6 +14,6 @@ public class ProvideApplication {
      * @param args
      */
     public static void main(String[] args) {
-       SpringApplication.run(ProvideApplication.class, args);
+        SpringApplication.run(ProvideApplication.class, args);
     }
 }

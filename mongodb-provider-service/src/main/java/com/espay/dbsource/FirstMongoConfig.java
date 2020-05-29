@@ -23,7 +23,7 @@ public class FirstMongoConfig {
 
     @Primary
     @Bean(name = "firstMongo")
-    public MongoTemplate firstMongoTemplate(){
+    public MongoTemplate firstMongoTemplate() {
         return new MongoTemplate(firstFactory(this.mongoProperties));
     }
 

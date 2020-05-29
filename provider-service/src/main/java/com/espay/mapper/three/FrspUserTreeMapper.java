@@ -11,6 +11,6 @@ public interface FrspUserTreeMapper extends BaseMapper<FrspUser> {
 
     FrspUser findUserByNameAndPassword(@Param("account") String account, @Param("password") String password);
 
-    Integer addUser(@Param("account") String account,@Param("password") String password,@Param("username") String username,@Param("sex") int sex,@Param("mobile") String mobile,@Param("email") String email);
+    Integer addUser(@Param("account") String account, @Param("password") String password, @Param("username") String username, @Param("sex") int sex, @Param("mobile") String mobile, @Param("email") String email);
 
 }

@@ -12,11 +12,11 @@ public class BotMatchComparator implements Comparator<JSONObject> {
     public int compare(JSONObject o1, JSONObject o2) {
         Double match_1 = o1.getDouble("match");
         Double match_2 = o2.getDouble("match");
-        if(match_2 > match_1){
+        if (match_2 > match_1) {
             return 1;
-        }else if(match_2 < match_1){
+        } else if (match_2 < match_1) {
             return -1;
-        }else{
+        } else {
             return 0;
         }
     }
