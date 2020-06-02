@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @Autowired
-    private kafkaTest kafkaTest;
+    private kafkaService kafkaService;
 
     @GetMapping("/hello")
     public String hello() {
-        kafkaTest.send();
+        kafkaService.send();
         return "success";
     }
 

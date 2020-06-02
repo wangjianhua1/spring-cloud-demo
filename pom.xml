@@ -71,12 +71,12 @@
 
 
         <!--热更新，热加载，不用每次重启启动类-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional>
-            <scope>runtime</scope>
-        </dependency>
+            <optional>false</optional>
+            &lt;!&ndash;<scope>runtime</scope>&ndash;&gt;
+        </dependency>-->
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <dependency>
             <groupId>org.apache.commons</groupId>
