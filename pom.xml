@@ -18,6 +18,7 @@
         <module>webflux</module>
         <module>zuul</module>
         <module>kafka-demo</module>
+        <module>demo-activiti</module>
     </modules>
 
     <parent>

@@ -1,0 +1,32 @@
+server:
+  port: 80
+  servlet:
+    context-path: /act
+debug: false #设置开发及调试模式
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/ #thymeleaf 所在路径
+    suffix: .html #thymeleaf 后缀
+    mode: HTML5 #thymeleaf 采用的标准
+    encoding: UTF-8 #thymeleaf 编码格式
+  http:
+    encoding:
+      charset: UTF-8
+  mvc:
+    date-format: yyyy-MM-dd #时间参数的格式化
+  jackson:
+    time-zone: GMT+8 #默认为格林尼治时间，设置为北京时间
+    date-format: yyyy-MM-dd HH:mm:ss SSS #设置时间的json的格式
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://192.168.99.174:3306/act_demo?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+  activiti: #activiti rest 配置
+    rest-api-enabled: true
+    rest-api-servlet-name: activiti-swagger-document
+    SpringProcessEngineConfiguration:
+      activityFontName: 宋体
+      labelFontName: 宋体
+      dataSource: datasource
+
