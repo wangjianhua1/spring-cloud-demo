@@ -19,7 +19,7 @@
 		<activiti.version>6.0.0</activiti.version>
 		<xmlgraphics.version>1.7</xmlgraphics.version>
 		<druid.version>1.1.10</druid.version>
-		<mysqlconnector.version>8.0.22</mysqlconnector.version>
+		<mysqlconnector.version>8.0.28</mysqlconnector.version>
 	</properties>
 
 	<dependencies>
